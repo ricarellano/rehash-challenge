@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { loremIpsum } from 'lorem-ipsum'
 import styles from '../../styles/Chat.module.css'
 import ChatLog from '../../components/ChatLog'
+import ChatInput from '../../components/ChatInput'
 
 const emails = [
   'a@b.com',
@@ -31,14 +32,17 @@ export default function Chat() {
     return () => clearTimeout(timeout)
   }, [chats])
 
-  const [message, setMessage] = useState('')
-  const handleSubmit = () => {
+  const handleSubmit = (message) => {
     // clear timeout before adding a message or it will be overwritten by timeout's old
     // ref to chats
     clearTimeout(timeout)
 
     // add new message here
     // { your code here }
+    setChats([...chats, {
+      userEmail: 'me@test.com',
+      message, // number of sentences
+    }])
 
     // restart the useEffect loop after message has been added
     timeout = addRandomMessages()
@@ -47,6 +51,7 @@ export default function Chat() {
   return (
     <div className={styles.chatContainer}>
       <ChatLog chats={chats} />
+      <ChatInput sendMessage={handleSubmit}/>
     </div>
   )
 }

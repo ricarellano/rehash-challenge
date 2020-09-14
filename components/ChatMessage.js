@@ -11,7 +11,7 @@ const ChatMessage = ({ chatMessage }) => {
   }).replace('http', 'https')
 
   return (
-    <div className={styles.chatMessage}>
+    <div className={chatMessage.userEmail == 'me@test.com' ? styles.chatMessageUser : styles.chatMessage }>
       <div className={styles.chatText}>{chatMessage.message}</div>
       <img className={styles.profileImage} src={avatarUrl} />
     </div>

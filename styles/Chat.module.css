@@ -3,20 +3,32 @@
 .chatContainer {
   width: 100%;
   background: green;
+  height: calc(100vh - 100px);
 }
 
 .chatLog {
-  flex: 1;
-  flex-direction: column;
+  height: calc(100vh - 200px);
   width: 100%;
+  overflow: auto;
 }
 
 .chatMessage {
   flex: 1;
+  align-self: flex-start;
+  flex-direction: row-reverse;
+  display: flex;
+  min-height: 60px;
+}
+
+.chatMessageUser {
+  flex: 1;
   align-self: flex-end;
   display: flex;
-  height: 60px;
-  max-height: 60px;
+  min-height: 60px;
+}
+
+.chatMessageUser .chatText {
+  text-align: end;
 }
 
 .chatText {
@@ -28,4 +40,17 @@
   height: 50px;
   border: 3px solid black;
   border-radius: 25px;
+}
+
+.messageInput {
+  width: 50%;
+  padding: 5px 5px;
+  margin: 8px 0 0 20px;
+  box-sizing: border-box;
+
+}
+
+.messageBtn {
+  border-radius: 2px;
+  padding: 5px 10px;
 }
