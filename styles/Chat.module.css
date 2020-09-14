@@ -1,0 +1,31 @@
+/********** MODIFY/ADD TO AS NEEDED **********/
+
+.chatContainer {
+  width: 100%;
+  background: green;
+}
+
+.chatLog {
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+}
+
+.chatMessage {
+  flex: 1;
+  align-self: flex-end;
+  display: flex;
+  height: 60px;
+  max-height: 60px;
+}
+
+.chatText {
+  flex: 1;
+}
+
+.profileImage {
+  width: 50px;
+  height: 50px;
+  border: 3px solid black;
+  border-radius: 25px;
+}
