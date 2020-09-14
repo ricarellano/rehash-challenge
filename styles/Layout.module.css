@@ -2,10 +2,31 @@
 /********** THIS FILE IS PART OF TASK 1 **********/
 
 .header {
+    display: flex;
+    height: 100px;
+    padding: 0 70px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.header img {
+    height: 22px;
+    width: 74px;
 }
 
 .nav {
+    
+}
 
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    color: #86939E;
+}
+.nav a:active {
+    color:blue;
 }
 
 .main {

@@ -1,1 +1,109 @@
 /********** THIS FILE IS PART OF TASK 1 **********/
+
+.heroImg {
+  width: 100%;
+  height: calc(100vh - 100px); 
+  background-image: url("/static/hero.png"); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.heroText {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+
+}
+
+.heroText p {
+    font-size: 18px;
+    line-height: 32px;
+
+}
+
+.heroText h1 {
+    font-size: 52px;
+    letter-spacing: -2px;
+    line-height: 58px;
+    font-weight: 300;
+    margin: 11px 0;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 100px 150px; 
+    background-color: #F4F4F4;
+}
+
+.title {
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;       
+}
+
+.title h2{
+    color: #43484D;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 58px;
+    letter-spacing: -2px;
+}
+
+.title p {
+    color: #5E6977;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 360px);
+    gap: 30px;
+    grid-template-rows: 400px;
+    width: 100%;
+    padding-top: 80px;
+    color: #43484D;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.0965523);
+}
+
+.cards img {
+    width: 100%;
+    height: 260px;
+}
+
+.cards h4 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px; 
+    text-align: center;
+    margin: 25px 0 0 0;
+}
+
+.cards p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    margin: 8px 30px 32px 30px;
+}
